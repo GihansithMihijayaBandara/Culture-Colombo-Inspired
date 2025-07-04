@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Culture Colombo Inspired</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    header {
+      background: url('cityscape.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    nav {
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background: #f4f4f4;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+
+    .text-overlay {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      animation: scrollText 10s linear infinite;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .cursive {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+    }
+
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #8b0000;
+    }
+    .menu-section {
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #ccc;
+      padding: 10px 0;
+    }
+    .item-name {
+      font-weight: bold;
+    }
+    .price {
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+    
+    <nav>
+  <a href="Culture Colombo Inspired.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Blog.html">Blog</a>
+  <a href="Contact Us.html">Contact Us</a>
+</nav>
+
+
+  
+  <div class="slide">
+    <img src="https://culturecolombo.lk/wp-content/uploads/2020/10/IMG_1707-768x768.jpg" alt="Image 1">
+    <div class="text-overlay cursive">Welcome to Colombo’s Cultural Beat</div>
+  </div>
+  <div class="slide">
+    <img src="https://th.bing.com/th/id/OIP.GOSssIplNkRJ7tb5f8iBlAHaFj?pid=ImgDet&w=474&h=355&rs=1&cb=idpwebp2&o=7&rm=3" alt="Image 2">
+    <div class="text-overlay cursive">Explore the Art Biennale</div>
+  </div>
+  <div class="slide">
+    <img src="https://th.bing.com/th/id/OIP.4S1bvt7i-IgFeTNRozgZXgHaFj?pid=ImgDet&w=474&h=355&rs=1&cb=idpwebp2&o=7&rm=3" alt="Image 3">
+    <div class="text-overlay cursive">Taste the Fusion Food Festival</div>
+  </div>
+</div>
+
+<div class="slider">
+  <div class="slide">
+    <img src="https://culturecolombo.lk/wp-content/uploads/2020/10/IMG_1707-768x768.jpg" alt="Image 1">
+    <div class="text-overlay">Welcome to Colombo’s Cultural Beat</div>
+  </div>
+  <div class="slide">
+    <img src="https://th.bing.com/th/id/OIP.GOSssIplNkRJ7tb5f8iBlAHaFj?pid=ImgDet&w=474&h=355&rs=1&cb=idpwebp2&o=7&rm=3" alt="Image 2">
+    <div class="text-overlay">Explore the Art Biennale</div>
+  </div>
+  <div class="slide">
+    <img src="https://th.bing.com/th/id/OIP.4S1bvt7i-IgFeTNRozgZXgHaFj?pid=ImgDet&w=474&h=355&rs=1&cb=idpwebp2&o=7&rm=3" alt="Image 3">
+    <div class="text-overlay">Taste the Fusion Food Festival</div>
+  </div>
+</div>
+
+
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlides() {
+    slides.forEach(slide => slide.style.display = 'none');
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].style.display = 'block';
+    setTimeout(showSlides, 5000); // Change slide every 5 seconds
+  }
+
+  showSlides();
+</script>
+<section>
+    <h2>About Us</h2>
+    <p>Culture Colombo is your gateway to the heart and soul of the city. From timeless heritage to cutting-edge creativity, we celebrate the stories that shape Sri Lanka's capital.</p>
+  </section>
+
+  <header>
+    <h1>discover our</h1>
+    <p style="color: #8b0000;">MOUTH WATERING MENU</p>
+  </header>
+
+  <div class="menu-section">
+    <h2>Fresh Juices</h2>
+    <div class="menu-item"><span class="item-name">Orange Juice</span><span class="price">Rs. 1500</span></div>
+    <div class="menu-item"><span class="item-name">Passion Fruit Juice</span><span class="price">Rs. 890</span></div>
+    <div class="menu-item"><span class="item-name">Mango Juice</span><span class="price">Rs. 875</span></div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Soups</h2>
+    <div class="menu-item"><span class="item-name">Vegetable Soup</span><span class="price">Rs. 850</span></div>
+    <div class="menu-item"><span class="item-name">Sweet Corn Chicken Soup</span><span class="price">Rs. 1050</span></div>
+    <div class="menu-item"><span class="item-name">Roasted Fish Soup</span><span class="price">Rs. 1050</span></div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Sambols</h2>
+    <div class="menu-item"><span class="item-name">Gotukola Sambolaya</span><span class="price">Rs. 835</span></div>
+    <div class="menu-item"><span class="item-name">Karawila Sambolaya</span><span class="price">Rs. 775</span></div>
+    <div class="menu-item"><span class="item-name">Pol Sambol</span><span class="price">Rs. 625</span></div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Main Dishes</h2>
+    <div class="menu-item"><span class="item-name">Jaffna Style Chicken</span><span class="price">Rs. 1650</span></div>
+    <div class="menu-item"><span class="item-name">Hot Butter Chicken</span><span class="price">Rs. 2150</span></div>
+    <div class="menu-item"><span class="item-name">Mutton Masala</span><span class="price">Rs. 2990</span></div>
+  </div>
+
+
+  <section>
+    <h2>About Us</h2>
+    <p>Culture Colombo is your gateway to the heart and soul of the city. From timeless heritage to cutting-edge creativity, we celebrate the stories that shape Sri Lanka's capital.</p>
+  </section>
+
+  <section>
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>Kandyan Dance Showcase – July 10</li>
+      <li>Colombo Art Biennale – August 5</li>
+      <li>Fusion Food Pop-Up Night – August 20</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Connect with us on social media | Subscribe to our newsletter</p>
+    <p>📍 Colombo, Sri Lanka | 📞 +94 123 456 789</p>
+  </footer>
+
+</body>
+</html>
